@@ -1,0 +1,28 @@
+# version isn't needed in real life project. It shows "the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion "
+version: "3.8"
+
+services:
+  
+  # Front End Container
+  item-app:
+    image: ghcr.io/mmfahrrestatp/item-app:v1
+    ports:
+      - 80:8080
+    depends_on:
+      - item-db
+    restart: always
+  
+  # Mongo DB Container
+  item-db:
+    image: mongo:3
+    volumes:
+      - app-db:/data/db
+    restart: always
+    # Env var isn't needed in this case
+    # environment:
+    #   MONGO_INITDB_ROOT_USERNAME: root
+    #   MONGO_INITDB_ROOT_PASSWORD: example
+
+# Use volume for persistant memory
+volumes:
+  app-db:
