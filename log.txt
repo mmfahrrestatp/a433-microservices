@@ -1,0 +1,84 @@
+item-app-1  | 
+item-app-1  | > docker-software-delivery@1.0.0 start /app
+item-app-1  | > node ./bin/www
+item-app-1  | 
+item-app-1  | NODE_ENV: production
+item-app-1  | Connected to database
+item-app-1  | [0mGET / [36m304 [0m251.400 ms - -[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m2.237 ms - -[0m
+item-app-1  | [0mGET /stylesheets/style.css [32m200 [0m38.083 ms - 519[0m
+item-app-1  | [0mGET /favicon.ico [33m404 [0m14.813 ms - 270[0m
+item-app-1  | [0mGET /api [32m200 [0m11.317 ms - 1642[0m
+item-app-1  | [0mGET / [36m304 [0m0.896 ms - -[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.959 ms - -[0m
+item-app-1  | [0mGET /stylesheets/style.css [36m304 [0m3.668 ms - -[0m
+item-app-1  | [0mGET /api [36m304 [0m4.338 ms - -[0m
+item-app-1  | [0mGET / [36m304 [0m0.986 ms - -[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.782 ms - -[0m
+item-app-1  | [0mGET /stylesheets/style.css [36m304 [0m3.279 ms - -[0m
+item-app-1  | [0mGET /api [36m304 [0m3.313 ms - -[0m
+item-app-1  | [0mGET / [36m304 [0m0.979 ms - -[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.613 ms - -[0m
+item-app-1  | [0mGET /stylesheets/style.css [36m304 [0m2.320 ms - -[0m
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=f323c5997ef2
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] db version v3.6.23
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] git version: d352e6a4764659e0d0350ce77279de3c1f243e5c
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.0.2g  1 Mar 2016
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] modules: none
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] build environment:
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten]     distmod: ubuntu1604
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten]     distarch: x86_64
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+item-db-1   | 2025-04-05T01:35:36.249+0000 I CONTROL  [initandlisten] options: { net: { bindIpAll: true } }
+item-db-1   | 2025-04-05T01:35:36.251+0000 I -        [initandlisten] Detected data files in /data/db created by the 'wiredTiger' storage engine, so setting the active storage engine to 'wiredTiger'.
+item-db-1   | 2025-04-05T01:35:36.251+0000 I STORAGE  [initandlisten] 
+item-db-1   | 2025-04-05T01:35:36.251+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+item-db-1   | 2025-04-05T01:35:36.251+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+item-db-1   | 2025-04-05T01:35:36.251+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=13444M,cache_overflow=(file_max=0M),session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+item-db-1   | 2025-04-05T01:35:36.642+0000 I STORAGE  [initandlisten] WiredTiger message [1743816936:642742][1:0x7c5427118a40], txn-recover: Main recovery loop: starting at 3/14592
+item-app-1  | [0mGET /api [36m304 [0m3.515 ms - -[0m
+item-app-1  | [0mPOST /api [32m201 [0m16.861 ms - 50[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.937 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.342 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.494 ms - 49[0m
+item-app-1  | [0mPOST /api [32m201 [0m3.763 ms - 50[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.373 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.454 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m1.962 ms - 49[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.622 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.686 ms - 48[0m
+item-db-1   | 2025-04-05T01:35:36.736+0000 I STORAGE  [initandlisten] WiredTiger message [1743816936:736368][1:0x7c5427118a40], txn-recover: Recovering log 3 through 4
+item-db-1   | 2025-04-05T01:35:36.801+0000 I STORAGE  [initandlisten] WiredTiger message [1743816936:801854][1:0x7c5427118a40], txn-recover: Recovering log 4 through 4
+item-db-1   | 2025-04-05T01:35:36.847+0000 I STORAGE  [initandlisten] WiredTiger message [1743816936:847818][1:0x7c5427118a40], txn-recover: Set global recovery timestamp: 0
+item-db-1   | 2025-04-05T01:35:36.860+0000 I CONTROL  [initandlisten] 
+item-db-1   | 2025-04-05T01:35:36.860+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+item-app-1  | [0mPOST /api [32m201 [0m2.652 ms - 50[0m
+item-db-1   | 2025-04-05T01:35:36.860+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+item-app-1  | [0mPOST /api [32m201 [0m2.107 ms - 49[0m
+item-db-1   | 2025-04-05T01:35:36.860+0000 I CONTROL  [initandlisten] 
+item-app-1  | [0mPOST /api [32m201 [0m2.837 ms - 50[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.644 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.844 ms - 51[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.157 ms - 50[0m
+item-app-1  | [0mPOST /api [32m201 [0m1.922 ms - 49[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.300 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.243 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.333 ms - 48[0m
+item-app-1  | [0mPOST /api [32m201 [0m2.304 ms - 51[0m
+item-db-1   | 2025-04-05T01:35:36.865+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+item-app-1  | [0mPOST /api [32m201 [0m1.842 ms - 49[0m
+item-db-1   | 2025-04-05T01:35:36.865+0000 I NETWORK  [initandlisten] listening via socket bound to 0.0.0.0
+item-app-1  | [0mGET / [36m304 [0m0.840 ms - -[0m
+item-db-1   | 2025-04-05T01:35:36.865+0000 I NETWORK  [initandlisten] listening via socket bound to /tmp/mongodb-27017.sock
+item-db-1   | 2025-04-05T01:35:36.865+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+item-db-1   | 2025-04-05T01:35:37.169+0000 I NETWORK  [listener] connection accepted from 172.19.0.3:46736 #1 (1 connection now open)
+item-db-1   | 2025-04-05T01:35:37.176+0000 I NETWORK  [conn1] received client metadata from 172.19.0.3:46736 conn1: { driver: { name: "nodejs", version: "2.2.36" }, os: { type: "Linux", name: "linux", architecture: "x64", version: "6.8.0-57-generic" }, platform: "Node.js v14.21.3, LE, mongodb-core: 2.1.20" }
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m0.584 ms - -[0m
+item-app-1  | [0mGET /stylesheets/style.css [36m304 [0m1.754 ms - -[0m
+item-app-1  | [0mGET /favicon.ico [33m404 [0m1.221 ms - 270[0m
+item-app-1  | [0mGET /api [32m200 [0m5.665 ms - 2741[0m
+item-app-1  | [0mGET / [36m304 [0m1.038 ms - -[0m
+item-app-1  | [0mGET /stylesheets/style.css [36m304 [0m1.610 ms - -[0m
+item-app-1  | [0mGET /javascripts/dist/dist.min.js [36m304 [0m1.134 ms - -[0m
+item-app-1  | [0mGET /api [36m304 [0m5.303 ms - -[0m
