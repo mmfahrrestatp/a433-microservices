@@ -26,7 +26,8 @@ spec:
             value: "8080"
 
           - name: MONGO_HOST
-            value: mongodb://$(MONGO_SVC_SERVICE_HOST):$(MONGO_SVC_SERVICE_PORT_MONGO)
+            # value: mongodb://$(MONGO_SVC_SERVICE_HOST):$(MONGO_SVC_SERVICE_PORT_MONGO)
+            value: "mongo-svc"
 
           - name: MONGO_USER
             valueFrom:

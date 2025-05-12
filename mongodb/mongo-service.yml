@@ -9,5 +9,5 @@ spec:
   - port: 27017
     name: mongo
   selector:
-    app: mongo
+    app: mongo-statefulset
   type: ClusterIP

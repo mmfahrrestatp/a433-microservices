@@ -20,3 +20,7 @@ spec:
         imagePullPolicy: IfNotPresent
         ports:
           - containerPort: 8000
+        env:
+          - name: VUE_APP_BACKEND
+            # value: "http://karsajobs-backend:$(KARSAJOBS_BACKEND_SVC_SERVICE_PORT)"
+            value: "http://192.168.49.2:30080"
