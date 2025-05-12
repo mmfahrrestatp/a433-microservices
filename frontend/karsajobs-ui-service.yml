@@ -8,7 +8,6 @@ spec:
   ports:
   - port: 8000
     targetPort: 8000
-    nodePort: 30800
   selector:
     app: karsajobs-frontend
-  type: NodePort
+  type: ClusterIP
