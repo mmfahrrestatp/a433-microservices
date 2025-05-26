@@ -18,7 +18,7 @@ jobs:
         with:
           dockerfile: Dockerfile
 
-  build-app-karsajobs:
+  build-app-karsajobs-ui:
     needs: lint-dockerfile
     runs-on: ubuntu-latest
 
