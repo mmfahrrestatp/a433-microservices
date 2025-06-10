@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: rabbitmq-statefulset
+  labels:
+    app: rabbitmq-statefulset
+spec:
+  selector:
+    matchLabels:
+      app: rabbitmq-statefulset
+  serviceName: rabbitmq-svc
+  replicas: 1
+  minReadySeconds: 10
+  template:
+    metadata:
+      labels:
+        app: rabbitmq-statefulset
+    spec:
+      terminationGracePeriodSeconds: 10
+      containers:
+      - image: docker.io/rabbitmq:3.11-management
+        name: rabbitmq-container
+        ports:
+        - name: amqp
+          containerPort: 5672 # used by AMQP 0-9-1 and AMQP 1.0 clients
+          
+        - name: management-ui
+          containerPort: 15672 # management UI and HTTP API
+          
+        volumeMounts:
+        # Mount Persistent Volume to container for data
+        - name: rabbitmq-persistent-storage
+          mountPath: /var/lib/rabbitmq/
+          subPath: data
+
+        # Mount Persistent Volume to container for log
+        - name: rabbitmq-persistent-storage
+          mountPath: /var/log/rabbitmq/
+          subPath: log
+
+      volumes:
+      - name: rabbitmq-persistent-storage
+        persistentVolumeClaim:
+          claimName: rabbitmq-pv-claim
