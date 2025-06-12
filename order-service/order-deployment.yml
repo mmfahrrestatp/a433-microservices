@@ -1,0 +1,32 @@
+# Create order-deployment
+# - use image from public package that have been created
+# - use port 3000 and edit AMQP_URL to use rabbitmq-svc DNS
+
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: order-deployment
+  labels:
+    app: order-deployment
+
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: order-deployment
+  template:
+    metadata:
+      labels:
+        app: order-deployment
+    spec:
+      containers:
+      - name: order-deployment
+        image: ghcr.io/mmfahrrestatp/order-service:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 3000
+        env:
+          - name: AMQP_URL
+            value: "amqp://rabbitmq-svc:5672"
+          - name: PORT
+            value: "3000"

@@ -1,0 +1,16 @@
+# Create order-svc for order-deployment
+# - The type is ClusterIP, use port 3000 as instructed
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: order-svc
+  labels:
+    app: order-svc
+spec:
+  ports:
+  - port: 3000
+    targetPort: 3000
+  selector:
+    app: order-deployment
+  type: ClusterIP
