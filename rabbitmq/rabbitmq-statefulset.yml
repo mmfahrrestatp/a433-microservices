@@ -1,5 +1,4 @@
 # Create RabbitMQ Statefulset
-# - with user and password
 # - set up volume and volume claim template
 # - there're two ports for AMQP Protocol and management ui
 
@@ -28,11 +27,6 @@ spec:
               name: amqp
             - containerPort: 15672
               name: management
-          env:
-            - name: RABBITMQ_DEFAULT_USER
-              value: user
-            - name: RABBITMQ_DEFAULT_PASS
-              value: password
           volumeMounts:
             - name: rabbitmq-data
               mountPath: /var/lib/rabbitmq

@@ -1,5 +1,5 @@
 # Create RabbitMQ Service for RabbitMQ Statefulset
-# - The type is NodePort so we can access management ui from browser
+# - The type is ClusterIP not NodePort, if we want to access management ui from browser use kubectl port-forward
 
 apiVersion: v1
 kind: Service
@@ -15,7 +15,6 @@ spec:
     - port: 15672
       targetPort: 15672 # management UI and HTTP API
       name: management-ui
-      nodePort: 30072
   selector:
     app: rabbitmq-statefulset
-  type: NodePort
+  type: ClusterIP
