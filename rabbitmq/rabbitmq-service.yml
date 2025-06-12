@@ -1,3 +1,6 @@
+# Create RabbitMQ Service for RabbitMQ Statefulset
+# - The type is NodePort so we can access management ui from browser
+
 apiVersion: v1
 kind: Service
 metadata:
@@ -6,13 +9,13 @@ metadata:
   name: rabbitmq-svc
 spec:
   ports:
-  - port: 5673
-    targetPort: 5672 # used by AMQP 0-9-1 and AMQP 1.0 clients
-    name: amqp
-  - port: 15673
-    targetPort: 15672 # management UI and HTTP API
-    name: management-ui
-    nodePort: 30072
+    - port: 5672
+      targetPort: 5672 # used by AMQP 0-9-1 and AMQP 1.0 clients
+      name: amqp
+    - port: 15672
+      targetPort: 15672 # management UI and HTTP API
+      name: management-ui
+      nodePort: 30072
   selector:
     app: rabbitmq-statefulset
   type: NodePort
